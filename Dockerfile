@@ -9,4 +9,4 @@ EXPOSE 4730
 
 USER gearman
 
-ENTRYPOINT [ "gearmand" ]
+CMD ["gearmand", "-l", "/var/log/gearman-job-server/gearmand.log"]
